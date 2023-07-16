@@ -16,7 +16,7 @@ class KThread:
         self,
         target: Callable,
         name: str = None,
-        daemon: bool = True,
+        daemon: bool = False,
         on_error: Callable | None = None,
     ) -> None:
         self.__target: Callable = target
@@ -85,6 +85,18 @@ class KThread:
     @status.setter
     def status(self, _) -> None:
         raise TypeError("Cannot modify the `status` property. It is read-only.")
+    
+    @property
+    def ident(self) -> int:
+        if self.alive:
+            return self.__thread.ident
+        
+        else:
+            raise KThreadNotAlive("Cannot get not running thread ident")
+        
+    @ident.setter
+    def ident(self, _) -> None:
+        raise TypeError("Cannot modify the `ident` property. It is read-only.")
 
     def __repr__(self) -> str:
         status = "started" if self.alive else "stopped"
