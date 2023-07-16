@@ -6,4 +6,4 @@
 3. Retrieval of function results: The library provides the capability to retrieve the results of functions running in separate threads.
 4. Quick thread launch: KThreading offers a simple and convenient interface for launching threads with a single line of code.
 5. Usage of functions as error handlers: The library allows for the usage of functions as error handlers, which will be called in case of exceptions occurring in a thread.
-### Read docs at [this webpage](https://its-matrix.gitbook.io/kthreading/, "Open docs").
+### Read docs at [this webpage](https://its-matrix.gitbook.io/kthreading/ "Open docs").

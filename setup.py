@@ -8,7 +8,7 @@ with open("LICENSE.md", "r", encoding="utf-8", errors="IGNORE") as file:
 
 setuptools.setup(
     name="kthreading",
-    version="0.2",
+    version="0.3",
     description="Get more controls over threads",
     long_description=readme_contents,
     long_description_content_type = "text/markdown",
