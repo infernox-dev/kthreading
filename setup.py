@@ -11,10 +11,11 @@ setuptools.setup(
     version="0.3",
     description="Get more controls over threads",
     long_description=readme_contents,
-    long_description_content_type = "text/markdown",
+    long_description_content_type="text/markdown",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
     ],
-    python_requires = ">=3.5"
+    python_requires=">=3.5",
+    packages=["kthreading"],
 )
